@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Мы сказали браузеру что у нас есть светлая и темная тема -->
+    <meta name="color-scheme" content="dark light" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <!-- theme -->
+    <link rel="stylesheet" href="styles/light.css" />
+    <link rel="stylesheet" href="styles/dark.css" />
+    <!-- globals style and variables -->
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/variables.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Mouth of Landings</title>
+  </head>
+  <body class="page">
+    <header class="header">
+        <ul class="header__list-items">
+            <li class="header__list-item">
+                <a href="#highway" class="header__list-link">Покрытия и градиенты</a>
+            </li>
+            <li class="header__list-item">
+                <a href="#bikes" class="header__list-link">Велосипеды</a>
+            </li>
+            <li class="header__list-item">
+                <a href="#trains" class="header__list-link">Тренировки</a>
+            </li>
+        </ul>
+        <div tabindex="1" class="hamburger-menu">
+            <div class="hamburger">
+              <p class="visually-hidden">Кнопка открытия меню</p>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+    </header>
+    <main class="main">
+      <!-- Cекция  "Шоссе, ТТ  и Грэвел" -->
+      <section class="roads" id="roads"></section>
+      <!-- Cекция «Катайся много или мало, долго или коротко, как хочешь - но катайся» -->
+      <section class="ride" id="ride"></section>
+      <!-- Cекция "Шоссе" -->
+      <section class="highway" id="highway"></section>
+      <!-- Секция "Велосипеды" -->
+      <section class="bikes" id="bikes"></section>
+      <!-- Секция "Тренировки" -->
+      <section class="trains" id="trains"></section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="scripts/script.js"></script>
+   
+  </body>
+</html>

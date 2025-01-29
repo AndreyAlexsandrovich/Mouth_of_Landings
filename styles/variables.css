@@ -1,0 +1,11 @@
+:root { 
+    /* System variables */
+--system-color-main: #151515;
+--system-color-background: #FFFF;
+/* Components variables */
+--component-color-button: #FFFF;
+--component-color-text: #222222;
+--component-background-menu: #FFFF;
+/* animation effect */
+--color-hover-header: #15151598;
+}

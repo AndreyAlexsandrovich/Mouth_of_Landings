@@ -1,0 +1,20 @@
+.page.theme-light { 
+    --system-color-main: #151515;
+    --component-color-button: #FFFF;
+    --component-color-text: #222222;
+    --system-color-background: #FFFF;
+    --component-footer-background: #EFEFEF;
+}
+
+
+@media (prefers-color-scheme: light) { 
+    :root { 
+        /* System variables */
+    --system-color-main: #151515;
+    --system-color-background: #FFFF;
+    /* Components variables */
+    --component-color-button: #FFFF;
+    --component-color-text: #222222;
+    --component-footer-background: #EFEFEF;
+    }
+}

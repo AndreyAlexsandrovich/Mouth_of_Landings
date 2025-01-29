@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    min-height: 74px;
+}
+
+.header__list-items {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-right: 119px;
+}
+
+.header__list-item {
+    border: 1px transparent solid;
+}
+
+.header__list-link {
+    color: var(--system-color-main);
+    font-size: 14px;
+    transition: color 0.5s ease-in-out;
+}
+
+.header__list-link:hover {
+    color: var(--color-hover-header);
+    transition: color 0.3s ease-in-out;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (width <=767px) {
+    .header__list-items {
+        gap: 0;
+        opacity: 0;
+        visibility: hidden;
+        margin-right: 0;
+    }
+
+    .header__list-items.show-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        gap: 34px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: 0px;
+        background-color: var(--component-background-menu, #FFFF);
+        width: 100vh;
+        height: 100vh;
+        transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    }
+
+    .header__list-items.show-menu.active { 
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        display: block;
+        margin-block-end: 6px;
+        margin-inline-end: 45px;
+        z-index: 1;
+        width: 22px;
+        height: 19px;
+    }
+
+    .line {
+        display: block;
+        position: absolute;
+        margin-right: 18px;
+        width: 22px;
+        height: 3px;
+        background-color: var(--system-color-main);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .line:nth-child(3) {
+        bottom: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .line.active {
+        transform: translateY(8px) rotate(45deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .line.active:nth-child(2) {
+        transform: scale(0);
+    }
+
+    .line.active:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}

@@ -1,0 +1,7 @@
+@import "components/header/header.css";
+
+.page { 
+    background-color: var(--system-color-background);
+    position: relative;
+    min-height: 100vh;
+}

@@ -1,0 +1,59 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    min-inline-size: 375px;
+    max-inline-size: 1440px;
+    margin: 0 auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  picture {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button,
+  a {
+    color: currentColor;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+  }
+
+
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
